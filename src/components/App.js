@@ -49,6 +49,7 @@ const App = (props) => {
       <div id="slide">
         <h1 data-testid="title">{slides[currindex].title}</h1>
         <p data-testid="text">{slides[currindex].text}</p>
+        <img src={`${slides[currindex].imgslider}`} alt="img" />
       </div>
       <button ref={prevRef} data-testid="button-prev" onClick={prevSlide}>
         Prev
